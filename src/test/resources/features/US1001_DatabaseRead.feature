@@ -1,0 +1,10 @@
+Feature: US1001 Kullanici Database'e baslanip bilgileri okuyabilir
+
+  @db
+  Scenario: TC01 kullanici database baglanip istedigi bilgileri okuyabilmeli
+    Given kullanici HMC veri tabanina baglanir
+    #database e baglanacagiz
+    And kullanici "tHOTELROOM" tablosundaki "Price" verilerini alir
+    #Query calistiracagiz
+    And kullanici "Price" sutunundaki verileri okur
+    #3. adimda database sorgusu sonunda bize dondurulen bilgiyi nasil kallanabilecegimizi gorecegiz
